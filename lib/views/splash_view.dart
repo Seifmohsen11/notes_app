@@ -50,12 +50,25 @@ class _SplashViewState extends State<SplashView>
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 90, 90, 90),
       body: Center(
-        child: ScaleTransition(
-          scale: _animation,
-          child: Image.asset(
-            "assets/images/note.png",
-            height: 200,
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ScaleTransition(
+              scale: _animation,
+              child: Image.asset(
+                "assets/images/note.png",
+                height: 200,
+              ),
+            ),
+            SizedBox(height: 50),
+            Text(
+              "SnapNote",
+              style: TextStyle(
+                  color: Color(0xfff7e1d7),
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold),
+            ),
+          ],
         ),
       ),
     );
