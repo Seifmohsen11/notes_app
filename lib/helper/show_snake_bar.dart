@@ -11,12 +11,12 @@ void showSnackBar(BuildContext context, String message) {
           fontSize: 16,
         ),
       ),
-      backgroundColor: Colors.deepPurple,
+      backgroundColor: const Color(0xFF61527C).withOpacity(.9),
       behavior: SnackBarBehavior.floating,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
-      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      margin: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
       duration: const Duration(seconds: 3),
     ),
   );
